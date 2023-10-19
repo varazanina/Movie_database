@@ -17,7 +17,7 @@ const MovieList: React.FC = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=movie`
+          `https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=movie`
         );
         setMovies(response.data.Search);
         setDisplayedMovies(response.data.Search);
