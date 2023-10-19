@@ -20,7 +20,7 @@ const MovieList: React.FC = () => {
           `http://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=movie`
         );
         setMovies(response.data.Search);
-        setDisplayedMovies(movies);
+        setDisplayedMovies(response.data.Search);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
