@@ -15,7 +15,7 @@ const MovieSearchBar: React.FC<MovieSearchBarProps> = ({ onSearch }) => {
     <div>
       <input
         type="text"
-        placeholder="Search by genre..."
+        placeholder="Search by name..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
       />
